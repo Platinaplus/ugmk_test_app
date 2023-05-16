@@ -1,0 +1,71 @@
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.13;
+}
+
+* {
+    scroll-behavior: smooth;
+
+    &::selection {
+        color: #fff;
+
+        background-color: #ccc;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button,
+button:focus {
+    outline: none;
+}
+
+h1 {
+    margin-bottom: 32px;
+
+    font-size: 48px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #10002b;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    color: #10002b;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+label {
+    margin: 0;
+}
+
+input[type='number'] {
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.page-layout-container {
+    padding-top: 72px;
+}

@@ -1,0 +1,19 @@
+
+.filter {
+    margin-bottom: 32px;
+    padding: 16px;
+    border: solid 1px #0d0d0d6f;
+    border-radius: 15px;
+
+    &__title {
+        min-width: 200px;
+        margin-right: 16px;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        margin-left: auto;
+    }
+}

@@ -49,19 +49,24 @@ export const PieChart = () => {
         ],
     };
 
+    const isData = data?.datasets[0]?.data?.length;
+
     if (loading) {
         return <Loader />;
     }
-
     return (
         <>
             <Typography variant='h4' align='center' gutterBottom>
                 Статистика по продукции фабрики {factoryNames[factoryId - 1]} за{" "}
                 {months[month - 1]}
             </Typography>
-            <div className={s.wrapper}>
-                <Pie data={data} options={options} />
-            </div>
+            {isData ? (
+                <div className={s.wrapper}>
+                    <Pie data={data} options={options} />
+                </div>
+            ) : (
+                <Typography align='center' variant='h5'>пока данных нет...</Typography>
+            )}
         </>
     );
 };

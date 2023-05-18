@@ -9,6 +9,7 @@ import { Loader } from "../../shared/ui/Loader";
 import MenuItem from "@mui/material/MenuItem";
 import { ProductChart } from "../../features/ProductChart";
 import Select from "@mui/material/Select";
+import Typography from '@mui/material/Typography';
 import s from "./MainChart.module.scss";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "effector-react";
@@ -71,7 +72,7 @@ export const Main = () => {
             ) : products ? (
                 <ProductChart products={products} product={Number(product)} />
             ) : (
-                <div>Пока данных нет...</div>
+                <Typography align='center' variant='h5'>пока данных нет...</Typography>
             )}
         </>
     );
